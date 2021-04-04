@@ -32,6 +32,12 @@ body textarea:required:valid {
  .logo a img{
  	padding-right: 10px;
  }
+ .header input{
+ 	display: none;
+ }
+ .header label{
+ 	display: none;
+ }
 .nav{
 	padding-top: 37px;
 	

@@ -24,6 +24,16 @@
   	.cart{
   		text-align: center;
   	}
+  	.header label{
+ 		display: block;
+ 		margin-top: 10px;
+ 	}
+ 	.nav{
+ 		display: none
+ 	}
+ 	.header label:checked > .nav{
+ 		display: block;
+ 	}
 }
 
 /* lg-устройства (больше или равно 992px) */
