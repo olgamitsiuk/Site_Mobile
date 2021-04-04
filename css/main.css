@@ -1,0 +1,153 @@
+body {
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; 
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; 
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; 
+}
+.logo{
+	padding-top: 10px;
+}
+.logo a{
+	font-size: 60px;
+  	font-family: "Jokerman";
+  	color: #5094f2;
+  	line-height: 1.2;
+  	text-decoration: none;
+  	display: flex;
+  	align-items: center;
+ }
+ .logo a img{
+ 	padding-right: 10px;
+ }
+.nav{
+	padding-top: 37px;
+	
+}
+.nav li{
+	padding: 0 5px;
+}
+.nav a{
+	font-size: 25px;
+  	font-family: "Jokerman";
+  	color: #6c6c6c;
+  	line-height: 1.2;
+  	text-decoration: none;
+  	padding: 0 0 20px 0;
+  	border-bottom: 3px solid #fff;
+}
+.nav a:hover{
+	border-bottom: 3px solid #5094f2;
+}
+.banner{
+	padding: 35px 0 0 20px;
+	background: #ccc url(../img/bg.png) no-repeat center center fixed;
+	background-size: cover;
+}
+.icons{
+	padding-top: 65px;
+}
+.blue, .red, .yellow{
+	padding-top: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.bluecircle, .redcircle, .yellowcircle{
+	padding: 0;
+	margin-bottom: 10px;
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+}
+.bluecircle{
+	background-color: #5094f2;
+}
+.redcircle{
+	background-color: #d94748;
+}
+.yellowcircle{
+	background-color: #ebbb11;
+}
+.bluecircle a, .redcircle a, .yellowcircle a{
+	display: block;
+}
+.bluetext, .redtext, .yellowtext{
+	padding: 10px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.bluetext a, .redtext a, .yellowtext a{
+	text-decoration: none;
+	font-size: 28px;
+  	font-family: "StylusBT";
+  	color: rgb(80, 148, 242);
+ }
+.bluetext p, .redtext p, .yellowtext p{
+	font-size: 18px;
+  	font-family: "SegoePrintRegular";
+  	color: rgb(144, 144, 144);
+  	line-height: 1.2;
+  	text-align: center;
+  	
+}
+h1{
+	padding: 40px 0 30px 25px;
+	font-size: 50px;
+  	font-family: "Jokerman";
+  	color: rgb(77, 142, 215);
+
+  	
+  	text-shadow: 0px 9px 0px rgba(122, 130, 161, 0.37);
+}
+.cart{
+	padding: 10px 0;
+}
+.cart a{
+	display: block;
+}
+h2{
+	font-size: 30px;
+ 	font-family: "StylusBT";
+  	color: rgb(111, 113, 115);
+  	line-height: 1.5;
+  	text-align: center;
+  	font-weight: bold;
+}
+.graytext{
+	padding: 10px 0;
+}
+.graytext p{
+	font-size: 16px;
+  	font-family: "StylusBT";
+  	color: rgb(144, 144, 144);
+  	line-height: 2.25;
+}
+.footer{
+	font-size: 25px;
+ 	font-family: "Algerian";
+  	color: rgb(144, 144, 144);
+  	line-height: 1.44;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding: 50px 0 30px 0;
+}
