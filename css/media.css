@@ -2,42 +2,168 @@
 @media (max-width: 575px) { /* CSS для ширины до 575px (включительно) */}
 
 /* sm-устройства (больше или равно 576px) */
-@media (min-width: 576px) {/* CSS для: 576px <= ширины <= 767px */}
-
-/* md-устройства (больше или равно 768px) */
-@media (min-width: 768px) and (max-width: 992px){
-.blue, .red, .yellow{
-	padding-top: 65px;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-direction: row;
+@media (min-width: 576px) and (max-width: 768px){
+	.header label{
+		display: block;
+		margin-top: 10px;
+	}
+	.logo a{
+		font-size: 70px;
+	}
+	.nav{
+		display: none
+	}
+	.nav_burger{
+		display: block;
+	}
+	.banner{
+		min-height: 355px;
+	}
+	.d-block{
+		width: 250px;
+	}
+	.carousel-control-prev-icon{
+		margin-left: -150px;
+	}
+	.carousel-control-next-icon{
+		margin-right: -150px;
+	}
+	.carousel-caption {
+		top: 5%;
+	}
+	.carousel-inner h5{
+		font-size: 36px;
+	}
+	.carousel-caption a{
+		font-size: 30px;
+	}
+	.triangles{
+		display: none;
+	}
+	.bluecircle, .redcircle, .yellowcircle{
+		width: 220px;
+		height: 220px;
+	}
+	.blue, .red, .yellow{
+		padding-top: 30px;
+		justify-content: space-between;
+		flex-direction: row;
 	}
 	.bluetext, .redtext, .yellowtext{
-	align-items: flex-start;
+		align-items: flex-start;
+	}
+	.bluetext a, .redtext a, .yellowtext a{
+		font-size: 45px;
 	}
 	.bluetext p, .redtext p, .yellowtext p{
-	text-align: left;
-  	}
-  	h1{
-  		text-align: center;
-  	}
-  	.cart{
-  		text-align: center;
-  	}
-  	.header label{
- 		display: block;
- 		margin-top: 10px;
- 	}
- 	.nav{
- 		display: none
- 	}
- 	.header label:checked > .nav{
- 		display: block;
- 	}
+		text-align: left;
+		font-size: 30px;
+	}
+	.shopping_cart{
+		text-align: center;
+	}
+	.shopping_cart a{
+		font-size: 60px;
+	}
+	.cart{
+		text-align: center;
+	}
+	.cart a img{
+		width: 500px;
+	}
+	h2{
+		font-size: 45px;
+	}
+	.graytext p{
+		font-size: 23px;
+	}
+	footer{
+		font-size: 30px;
+	}
+}
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) and (max-width: 992px){
+	.header label{
+		display: block;
+		margin-top: 10px;
+	}
+	.logo a{
+		font-size: 70px;
+	}
+	.nav{
+		display: none
+	}
+	.nav_burger{
+		display: block;
+	}
+	.banner{
+		min-height: 355px;
+	}
+	.d-block{
+		width: 250px;
+	}
+	.carousel-control-prev-icon{
+		margin-left: -150px;
+	}
+	.carousel-control-next-icon{
+		margin-right: -150px;
+	}
+	.carousel-caption {
+		top: 5%;
+	}
+	.carousel-inner h5{
+		font-size: 36px;
+	}
+	.carousel-caption a{
+		font-size: 30px;
+	}
+	.triangles{
+		display: none;
+	}
+	.bluecircle, .redcircle, .yellowcircle{
+		width: 220px;
+		height: 220px;
+	}
+	.blue, .red, .yellow{
+		padding-top: 30px;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.bluetext, .redtext, .yellowtext{
+		align-items: flex-start;
+	}
+	.bluetext a, .redtext a, .yellowtext a{
+		font-size: 45px;
+	}
+	.bluetext p, .redtext p, .yellowtext p{
+		text-align: left;
+		font-size: 30px;
+	}
+	.shopping_cart{
+		text-align: center;
+	}
+	.shopping_cart a{
+		font-size: 60px;
+	}
+	.cart{
+		text-align: center;
+	}
+	.cart a img{
+		width: 500px;
+	}
+	h2{
+		font-size: 45px;
+	}
+	.graytext p{
+		font-size: 23px;
+	}
+	footer{
+		font-size: 30px;
+	}
 }
 
 /* lg-устройства (больше или равно 992px) */
 @media (min-width: 992px) {
 
-/* xl-устройства (больше или равно 1200px) */
+	/* xl-устройства (больше или равно 1200px) */
 @media (min-width: 1200px) {/* CSS для: ширины >= 1200px */}

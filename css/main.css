@@ -1,69 +1,154 @@
 body {
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; 
-}
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; 
-}
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green; 
+	font-weight: normal;
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden; 
 }
 .logo{
 	padding-top: 10px;
 }
 .logo a{
+	padding-bottom: 7px;
 	font-size: 60px;
-  	font-family: "Jokerman";
-  	color: #5094f2;
-  	line-height: 1.2;
-  	text-decoration: none;
-  	display: flex;
-  	align-items: center;
- }
- .logo a img{
- 	padding-right: 10px;
- }
- .header input{
- 	display: none;
- }
- .header label{
- 	display: none;
- }
-.nav{
-	padding-top: 37px;
-	
+	font-family: "Jokerman";
+	color: #5094f2;
+	line-height: 1.2;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	border-bottom: 3px solid #fff;
 }
-.nav li{
-	padding: 0 5px;
+.logo a img{
+	padding-right: 10px;
+}
+.logo a:hover{
+	border-bottom: 3px solid #5094f2;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
 }
 .nav a{
 	font-size: 25px;
-  	font-family: "Jokerman";
-  	color: #6c6c6c;
-  	line-height: 1.2;
-  	text-decoration: none;
-  	padding: 0 0 20px 0;
-  	border-bottom: 3px solid #fff;
+	font-family: "Jokerman";
+	color: #6c6c6c;
+	line-height: 1.2;
+	text-decoration: none;
+	padding: 0 0 15px 0;
+	border-bottom: 3px solid #fff;
 }
 .nav a:hover{
 	border-bottom: 3px solid #5094f2;
 }
+.nav_burger{
+	display: none;
+	padding-top: 20px;
+}
+.nav_burger input{
+	display: none;
+}
+.nav_burger label{
+	cursor: pointer;
+}
+.button_on{
+	position: absolute;
+	top: 84px;
+	right: 19px;
+	background-color: #fff;
+	width: 200px;
+	z-index: 12;
+	border: 1px solid #5094f2;
+	border-radius: 5px;
+}
+.button_on ul{
+	display: flex;
+	flex-direction: column;
+}
+.button_on ul li{
+	padding: 15px;
+}
+.button_on ul a{
+	font-size: 25px;
+	font-family: "Jokerman";
+	color: #6c6c6c;
+	line-height: 1.1;
+	text-decoration: none;
+	border-bottom: 3px solid #fff;
+}
+.button_on ul a:hover{
+	border-bottom: 3px solid #5094f2;
+}
+input + label > .button_on{
+	display: none;
+}
+input:checked + label > .button_on{
+	display: block;
+}
+
 .banner{
-	padding: 35px 0 0 20px;
+	min-height: 480px;
+	padding-top: 30px;
 	background: #ccc url(../img/bg.png) no-repeat center center fixed;
 	background-size: cover;
 }
-.icons{
-	padding-top: 65px;
+.carousel-control-prev{
+	background-color: rgba(255,255,255,0);
+	border-width: 0px;
+}
+.carousel-control-next{
+	background-color: rgba(255,255,255,0);
+	border-width: 0px;
+}
+.carousel-control-prev-icon{
+	background-image: url(../img/left.png);
+	margin-left: -200px;
+	height: 50px;
+}
+.carousel-control-next-icon{
+	background-image: url(../img/right.png);
+	margin-right: -200px;
+	height: 50px;
+}
+.carousel-inner h5{
+	font-family: "StylusBT";
+	font-size: 44px;
+}
+.carousel-inner p{
+	font-family: "StylusBT";
+	font-size: 28px;
+}
+.carousel-caption {
+	right: 0;
+	top: 15%;
+	left: 50%;
+	text-align: left;
+}
+.link{
+	margin-top: 30px;
+}
+.carousel-caption a{
+	padding: 10px 30px;
+	background-color: #5094f2;
+	color: #fff;
+	font-size: 22px;
+}
+.carousel-caption a img{
+	padding-right: 10px;
+}
+.carousel-caption a:hover{
+	text-decoration: none;
+	padding: 12px 32px;
+	margin: -2px;
+}
+.triangles{
+	padding: 0;
+	background-image: url(../img/triangles.png);
+	height: 16px;
+	padding: 0;
 }
 .blue, .red, .yellow{
 	padding-top: 65px;
@@ -74,7 +159,6 @@ body textarea:required:valid {
 }
 .bluecircle, .redcircle, .yellowcircle{
 	padding: 0;
-	margin-bottom: 10px;
 	width: 190px;
 	height: 190px;
 	border-radius: 50%;
@@ -95,6 +179,10 @@ body textarea:required:valid {
 .bluecircle a, .redcircle a, .yellowcircle a{
 	display: block;
 }
+.bluecircle a:hover, .redcircle a:hover,
+.yellowcircle a:hover{
+	transform: scale(1.1);
+}
 .bluetext, .redtext, .yellowtext{
 	padding: 10px 25px;
 	display: flex;
@@ -105,55 +193,71 @@ body textarea:required:valid {
 .bluetext a, .redtext a, .yellowtext a{
 	text-decoration: none;
 	font-size: 28px;
-  	font-family: "StylusBT";
-  	color: rgb(80, 148, 242);
- }
+	font-weight: bold;
+	font-family: "StylusBT";
+	color: rgb(80, 148, 242);
+}
+.bluetext a:hover, .redtext a:hover,
+.yellowtext a:hover{
+	color: #1f6fca;
+}
 .bluetext p, .redtext p, .yellowtext p{
 	font-size: 18px;
-  	font-family: "SegoePrintRegular";
-  	color: rgb(144, 144, 144);
-  	line-height: 1.2;
-  	text-align: center;
-  	
+	font-family: "SegoePrintRegular";
+	color: rgb(144, 144, 144);
+	line-height: 1.2;
+	text-align: center;
 }
-h1{
-	padding: 40px 0 30px 25px;
+.shopping_cart{
+	padding: 40px 30px;
+}
+.shopping_cart a{
+	text-decoration: none;
+	color: rgb(77, 142, 215);
+	text-shadow: 0px 9px 0px rgba(122, 130, 161, 0.37);
 	font-size: 50px;
-  	font-family: "Jokerman";
-  	color: rgb(77, 142, 215);
-
-  	
-  	text-shadow: 0px 9px 0px rgba(122, 130, 161, 0.37);
+	font-family: "Jokerman";
+}
+.shopping_cart a:hover{
+	color: #1f6fca;
 }
 .cart{
-	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .cart a{
 	display: block;
 }
+.cart a:hover{
+	transform: scale(1.01);
+}
 h2{
 	font-size: 30px;
- 	font-family: "StylusBT";
-  	color: rgb(111, 113, 115);
-  	line-height: 1.5;
-  	text-align: center;
-  	font-weight: bold;
+	font-family: "StylusBT";
+	color: rgb(111, 113, 115);
+	line-height: 1.5;
+	text-align: center;
+	font-weight: bold;
 }
 .graytext{
 	padding: 10px 0;
 }
 .graytext p{
 	font-size: 16px;
-  	font-family: "StylusBT";
-  	color: rgb(144, 144, 144);
-  	line-height: 2.25;
+	font-family: "StylusBT";
+	color: rgb(144, 144, 144);
+	line-height: 2.25;
 }
 .footer{
 	font-size: 25px;
- 	font-family: "Algerian";
-  	color: rgb(144, 144, 144);
-  	line-height: 1.44;
-  	text-transform: uppercase;
-  	text-align: center;
-  	padding: 50px 0 30px 0;
+	font-family: "Algerian";
+	color: rgb(144, 144, 144);
+	line-height: 1.44;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+}
+.footer p{
+	padding: 30px 0;
 }
